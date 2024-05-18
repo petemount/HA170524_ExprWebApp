@@ -24,6 +24,10 @@ app.get("/datenschutz", (req, res) => {
 
 // Server aufrufen
 
-app.listen(PORT, () => {
+/* app.listen(PORT, () => {
     console.log(`Der Server wurde gestartet auf Port: ${PORT}`);
-  });
+  }); */
+
+app.listen(PORT, (req, res) => {
+    console.log(`Server gestartet, unter: http://localhost:${PORT}/home`);
+  })  
